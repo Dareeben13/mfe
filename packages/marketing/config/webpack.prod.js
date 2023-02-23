@@ -10,6 +10,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
+    publicPath: "/marketing/latest/",
   },
   plugins: [
     new ModuleFederationPlugin({
@@ -24,3 +25,5 @@ const prodConfig = {
 };
 
 module.exports = merge(commonConfig, prodConfig);
+
+//  Argument of type '(tools: CreativeToolDTO[]) => Promise<CreativeToolDTO[]>' is not assignable to parameter of type 'MutationKey'.ts(2769)
